@@ -1,0 +1,10 @@
+{{#isBare}}
+{{{mainSource}}}
+{{/isBare}}{{^isBare}}
+  package({{{id}}}, {
+{{#sources}}{{#i}},{{/i}}
+    {{{path}}}: function (module, exports, require) {
+{{{source}}}
+    }{{/sources}}
+  }, {{isExposed}}{{#main}}, {{{main}}}{{#bridge}}, {{{bridge}}}{{/bridge}}{{/main}});
+{{/isBare}}
