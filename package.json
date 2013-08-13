@@ -1,57 +1,61 @@
 {
-    "name": "ender"
-  , "description": "Open Module JavaScript Framework"
-  , "version": "1.1.0"
-  , "authors": [
-        "Jacob Thornton <jacob@twitter.com> (https://github.com/fat)"
-      , "Dustin Diaz <dustin@obvious.com> (https://github.com/ded)"
-      , "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)"
-    ]
-  , "keywords": [ "ender", "modules", "builder", "framework", "packager" ]
-  , "main": "./lib/main.js"
-  , "homepage": "https://ender.jit.su"
-  , "dependencies": {
-
-        "ender-args-parser"      : "~0.0.2"
-      , "ender-builder"          : "~0.1.0"
-      , "ender-dependency-graph" : "~0.0.2"
-      , "ender-installer"        : "~0.0.0"
-      , "ender-minify"           : "~0.1.1"
-      , "ender-package-util"     : "~0.0.1"
-      , "ender-repository"       : "~0.0.4"
-
-      , "colors"           : "~0.6.0"
-      , "async"            : "~0.1.22"
-      , "hogan.js"         : "~2.0.0"
-      , "archy"            : "~0.0.2"
-      , "colors-tmpl"      : "~0.1.0"
-      , "xregexp"          : "~2.0.0"
-      , "errno"            : "~0.0.3"
-      , "glob"             : "~3.1.14"
-
-    }
-  , "directories": {
-        "lib"         : "./lib"
-      , "bin"         : "./bin"
-    }
-  , "devDependencies": {
-        "bustermove"       : "*"
-      , "referee"          : "*"
-      , "tap"              : "*"
-      , "rimraf"           : "*"
-      , "jshint"           : "*"
-      , "mkfiletree"       : "*"
-      , "require-subvert"  : "*"
-    }
-  , "bin": {
-        "ender"       : "./bin/ender"
-    }
-  , "preferGlobal": true
-  , "scripts": {
-        "test"        : "make alltests"
-    }
-  , "repository": {
-        "type"        : "git"
-      , "url"         : "https://github.com/ender-js/Ender.git"
-    }
+  "name": "ender",
+  "description": "Open Module JavaScript Framework",
+  "version": "1.1.0",
+  "authors": [
+    "Jacob Thornton <jacob@twitter.com> (https://github.com/fat)",
+    "Dustin Diaz <dustin@obvious.com> (https://github.com/ded)",
+    "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)"
+  ],
+  "keywords": [
+    "ender",
+    "modules",
+    "builder",
+    "framework",
+    "packager"
+  ],
+  "main": "./lib/main.js",
+  "homepage": "https://ender.jit.su",
+  "dependencies": {
+    "ender-args-parser": "~0.0.2",
+    "ender-builder": "~0.1.0",
+    "ender-dependency-graph": "~0.0.2",
+    "ender-installer": "~0.0.0",
+    "ender-minify": "~0.1.1",
+    "ender-package-util": "~0.0.1",
+    "ender-repository": "~0.0.4",
+    "colors": "~0.6.0",
+    "async": "~0.1.22",
+    "hogan.js": "~2.0.0",
+    "archy": "~0.0.2",
+    "colors-tmpl": "~0.1.0",
+    "xregexp": "~2.0.0",
+    "errno": "~0.0.3",
+    "glob": "~3.1.14",
+    "browserify": "~2.26.0"
+  },
+  "directories": {
+    "lib": "./lib",
+    "bin": "./bin"
+  },
+  "devDependencies": {
+    "bustermove": "*",
+    "referee": "*",
+    "tap": "*",
+    "rimraf": "*",
+    "jshint": "*",
+    "mkfiletree": "*",
+    "require-subvert": "*"
+  },
+  "bin": {
+    "ender": "./bin/ender"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "make alltests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ender-js/Ender.git"
+  }
 }
